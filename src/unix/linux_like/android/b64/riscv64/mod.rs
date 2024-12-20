@@ -7,7 +7,7 @@ s! {
     pub struct stat {
         pub st_dev: ::dev_t,
         pub st_ino: ::ino_t,
-        pub st_mode: ::c_uint,
+        pub st_mode: crate::mode_t,
         pub st_nlink: ::c_uint,
         pub st_uid: ::uid_t,
         pub st_gid: ::gid_t,
@@ -30,7 +30,7 @@ s! {
     pub struct stat64 {
         pub st_dev: ::dev_t,
         pub st_ino: ::ino_t,
-        pub st_mode: ::c_uint,
+        pub st_mode: crate::mode_t,
         pub st_nlink: ::c_uint,
         pub st_uid: ::uid_t,
         pub st_gid: ::gid_t,
